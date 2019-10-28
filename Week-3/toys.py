@@ -10,16 +10,13 @@ with functions.
 # to the input and prints the result
 def inc(a):
     a = a + 1
-    print(a)
-#print(inc(5))
-inc(5)
+    return a
 
 # write a function that adds 1
 # to the input and returns the result
 def inc_return(a):
     a = a + 1
     return a
-print(inc_return(12))
 
 # write a function that adds
 # the two input numbers together
@@ -27,8 +24,6 @@ print(inc_return(12))
 def sum(a, b):
     sum = a + b
     return sum
-print(sum(5, 3))
-
 
 # write a function that takes two
 # numbers, adds them together using 
@@ -39,17 +34,14 @@ def sum_inc(a, b):
     sum2 = inc_return(sum2)
 
     return sum2
-
-print(sum_inc(2,4))
-
-
+ 
 # write a function that returns a 
 # boolean (True or False) for whether 
 # the input number is even
 def is_even(a):
     boolTest =  (a % 2) == 0
     return boolTest
-print(is_even(5))
+#print(is_even(5))
 
 
 # create for loop that takes a string
@@ -62,17 +54,23 @@ def string_repeat(phrase, repeat):
     s = str()
     for i in range(repeat):
         s += phrase
-    print(s)
+    return s
     #for i in range(repeat)
         #string = phrase * repeat
     
     #print string
-string_repeat("dog", 4)
+    
 
-def main()
+def main():
+    print(inc(5))
+    print(string_repeat("dog", 4))
+    print(is_even(4))
+    print(sum_inc(2,4))
+    print(sum(5, 3))
+    print(inc_return(12))
     # input function you want to test
 
-if __name__ = '__main__':
+if __name__ == '__main__':
     main()
     #in the terminal, its studying internal variable in python, executing from command line not interactive shell
 
