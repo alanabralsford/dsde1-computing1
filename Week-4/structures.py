@@ -9,7 +9,7 @@ Simple functions performing operations on basic Python data structures.
 # write a function that returns a list containig the first and the last element
 # of "the_list". 
 def first_and_last(the_list):
-    return []
+    return [1, -1]
 
 
 # write a function that returns part of "the_list" between indices given by the
@@ -19,7 +19,7 @@ def first_and_last(the_list):
 # list, raise a "ValueError" exception. 
 def part_reverse(the_list, beginning, end):
     return # hint this is incomplete
-
+#print part_reverse()
 
 # write a function that at the "index" of "the_list" inserts three times the
 # same value. For example if the_list = [0,1,2,3,4] and index = 3 the function
@@ -33,7 +33,16 @@ def repeat_at_index(the_list, index):
 # write a function that checks whether the word is a palindrome, i.e. it reads
 # the same forward and backwards
 def palindrome_word(word):
-    return
+    rev = word[::-1]
+    if (rev == word):
+        return True
+    return False
+return palindrome_word()
+print(palindrome_word())
+
+#word = level
+   # palindrome_word()
+
 
 # write a function that checks whether the sentence is a palindrome, i.e. it
 # read the same forward and backward. Ignore all spaces and other characters

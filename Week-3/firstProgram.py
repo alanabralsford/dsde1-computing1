@@ -12,8 +12,12 @@ roll = random.randint(1,10)
 if (roll == guess):
     print(roll == guess)
 else:
-    while x < 2:
-        print(roll) '''in a real situation, take this line out as it tells you the generated number, I kept this to test the game'''
+    while (x < 2):
+        print(roll)
+        """
+        in a real situation, take this line out as it tells
+        you the generated number, I kept this to test the game
+        """
         print("guess a number between 1 and 10")
         guess = input('-->')
         guess = int(guess)
@@ -22,6 +26,3 @@ else:
             break
         print(roll == guess)
         x = x + 1
-
-#print(roll == guess)
-#print(roll)

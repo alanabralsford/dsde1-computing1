@@ -5,7 +5,7 @@ Unit tests for pendulum function.
 '''
 
 import unittest
-import pendulum as pen
+import test_pendulum as pen
 
 class TestSum(unittest.TestCase):
     def test_valid_input(self):
