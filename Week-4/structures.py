@@ -37,8 +37,7 @@ def palindrome_word(word):
     if (rev == word):
         return True
     return False
-return palindrome_word()
-print(palindrome_word())
+print(palindrome_word("santa"))
 
 #word = level
    # palindrome_word()

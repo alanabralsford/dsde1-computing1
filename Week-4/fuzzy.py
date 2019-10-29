@@ -1,7 +1,7 @@
 '''
 fuzzy.py
 
-Lint this file using PyLint.
+Lint this file using PyLint. 
 '''
 
 # This function does some maths on three numbers.
