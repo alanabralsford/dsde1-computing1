@@ -7,25 +7,46 @@ Simple functions performing operations on basic Python data structures.
 # Lists
 
 # write a function that returns a list containig the first and the last element
-# of "the_list". 
+# of "the_list".
+
+the_list = [0,1,2,3,4]
 def first_and_last(the_list):
-    return [1, -1]
-
-
+    return the_list[0], the_list[-1]
 # write a function that returns part of "the_list" between indices given by the
 # second and third parameter, respectively. The returned part should be in
 # reverse order than in the original "the_list". 
-# If "end" is greater then "beginning" or any og the indices is out of the
+# If "end" is greater then "beginning" or any of the indices is out of the
 # list, raise a "ValueError" exception. 
 def part_reverse(the_list, beginning, end):
-    return # hint this is incomplete
+    if end > beginning:
+        print('ValueError1')
+        raise ValueError
+    elif end > len(the_list):
+        print('ValueError2')
+        raise ValueError
+    elif end < 0:
+        print('ValueError3')
+        raise ValueError
+    elif beginning < 0:
+        print('ValueError4')
+        raise ValueError
+    elif beginning > len(the_list):
+        print('ValueError5')
+        raise ValueError
+    else:
+        new_list = the_list[end:beginning]
+        return(new_list[::-1])
+        #return(the_list[-end:-beginning])
+
+    
 #print part_reverse()
 
 # write a function that at the "index" of "the_list" inserts three times the
 # same value. For example if the_list = [0,1,2,3,4] and index = 3 the function
 # will return [0,1,2,3,3,3,4]. 
 def repeat_at_index(the_list, index):
-    return
+    second_list = (the_list[0:index] + ([the_list[index]]*index) + the_list[index+1:len(the_list)])
+    return second_list
 
 
 # Strings
@@ -35,13 +56,9 @@ def repeat_at_index(the_list, index):
 def palindrome_word(word):
     rev = word[::-1]
     if (rev == word):
+        print(rev)
         return True
     return False
-print(palindrome_word("santa"))
-
-#word = level
-   # palindrome_word()
-
 
 # write a function that checks whether the sentence is a palindrome, i.e. it
 # read the same forward and backward. Ignore all spaces and other characters
@@ -77,3 +94,10 @@ def value_exists(dictionary, value):
 # from dictionary1 and dictionary2.
 def merge_dictionaries(dictionary1, dictionary2):
     return
+
+print(first_and_last(the_list))
+print(palindrome_word("santa"))
+print(palindrome_word("level"))
+print(part_reverse(the_list, 3, 1))
+print(repeat_at_index([0, 1, 2, 3, 4], 3))
+print(repeat_at_index(the_list, 3))
