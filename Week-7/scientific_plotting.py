@@ -59,9 +59,9 @@ def main():
     '''The function that will be called first.'''
 
     # number of data points
-    num_values = 100
-    y_data = create_line_data(num_values)
-    scatter_data = create_scatter_data(num_values)
+    #num_values = 100
+    #y_data = create_line_data(num_values)
+    #scatter_data = create_scatter_data(num_values)
 
 
 
