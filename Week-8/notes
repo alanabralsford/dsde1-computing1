@@ -1,0 +1,52 @@
+'''In an interactive Python shell, print out the list of files and folders 
+in the folder where this README is located. 
+(Should be the same as when you type ls on the command line.)
+'''
+
+(base) dyn3148-58:Week-8 alana$ python
+>>> import os
+>>> os.getcwd()
+'/Users/alana/Documents/UNI/comp1/GitHub/dsde1-computing1/Week-8'
+>>> os.listdir()
+['text-files', 'README 2.md', 'my_resistors.py', '.DS_Store', 
+'test_tfidf.py', '__pycache__', 'README.md', 'img', '.gitignore', 
+'loop.py', 'resistor.py', 'parallel.py', 'test_student.py']
+
+
+Either in the interactive shell or in a Python file if you want to save it, 
+loop through the content of the folder text_files and print out the name 
+of each file in the folder.
+
+>>> os.listdir('text-files')
+['a-drinking-song-yeats.txt', 'mercutio.txt', 'the-start-teasdale.txt', 'chrismas-carol.txt']
+
+Write a Python script that opens the file mercutio.txt 
+in the folder text-files and prints the first 10 lines.
+
+>>> f = open('text-files/mercutio.txt', 'r')
+>>> for x in range (10):
+...     print(f.readline())
+... 
+
+to close the file:
+
+f.close()
+
+Open the christmas-carol.txt file and rewrite the ending. 
+Remove the last set of paragraphs and replace the text with 
+a new ending where Scrooge did not learn any lessons. 
+Write out your new ending to the text file and then open it 
+in a text editor to verify that your changes worked
+
+>>> f = open("christmas-carol.txt", "w")
+>>> f.write("hello")
+>>> f = open("christmas-carol.txt", "r")
+>>> print(f.read())
+hello
+
+Write a Python script that creates a new file named the 
+current time and date (see the time module) which contains a 
+description what you will do over the holidays and saves the 
+file in the text-files folder (located in the same folder as this README).
+
+>>> f = open(time.asctime() + ".txt", "x")
