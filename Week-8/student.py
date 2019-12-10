@@ -36,6 +36,7 @@ class DesEngStudent:
 
 
 #s1 = DesEngStudent("Peter", 3, 100)
+#victor
 """ s1.print()
 #print(s1.spend(30))
 print(s1.three_d(5))
