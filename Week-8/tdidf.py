@@ -51,6 +51,7 @@ class TfIdf:
 
         return dictionary
 
-#TfIdf.read_file("text-files/mercutio")
-
+file = TfIdf("text-files/mercutio")
+file.read_file("text-files/mercutio")
+print(file.string_to_list("I love dogs and Victor hates glitter"))
 

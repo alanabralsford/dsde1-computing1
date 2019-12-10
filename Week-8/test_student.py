@@ -18,7 +18,7 @@ class TestStudent(unittest.TestCase):
         Test returning a string for easy printing
         '''
         my_student = student.DesEngStudent('Becky Stewart', 2, 20)
-        #result = my_student.print()
+        result = my_student.print()
         self.assertEqual(result, 'Becky Stewart (DE2) with £20 remaining')
 
     def test_paper(self):
