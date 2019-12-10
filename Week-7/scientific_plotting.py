@@ -27,7 +27,7 @@ def line_graph():
     plt.ylabel('Pure Joy')
     plt.title("Secret to Happiness")
     plt.show()
-#line_graph()
+line_graph()
 
 def create_scatter_data(num_values):
     '''Returns a dictionary with two arrays all length num_values:
@@ -45,7 +45,7 @@ def scatter_graph():
     plt.ylabel('Pure Joy')
     plt.title("Secret to Happiness")
     plt.show()
-#scatter_graph()
+scatter_graph()
 
 def histogram():
     data = create_scatter_data(100)
